@@ -46,7 +46,7 @@ def handle_exception(error):
     main.logger.debug("Server side exception caught")
     main.stop_hooks()
     main.logger.error("Encountered Exception: {0}".format(traceback.format_exc()))
-    return AMLResponse(error.to_dict(), error.status_code)
+    return AMLResponse(error.to_dict(), error.status_code, json_str=True)
 
 
 # Errors from Client Request
@@ -55,7 +55,7 @@ def handle_exception(error):
     main.logger.debug("Client request exception caught")
     main.stop_hooks()
     main.logger.error("Encountered Exception: {0}".format(traceback.format_exc()))
-    return AMLResponse(error.to_dict(), error.status_code)
+    return AMLResponse(error.to_dict(), error.status_code, json_str=True)
 
 
 # Errors from User Run Function
@@ -133,7 +133,7 @@ def run_scoring(service_input, request_headers):
             main.logger.info("aml_response_body is available from run() output")
             response_body = response['aml_response_body']
 
-    return AMLResponse(response_body, response_status_code, response_headers, True)
+    return AMLResponse(response_body, response_status_code, response_headers, json_str=True)
 
 def alarm_handler(signum, frame):
     error_message = "Scoring timeout after {} ms".format(main.scoring_timeout_in_ms)
