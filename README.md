@@ -10,6 +10,7 @@
     - 'inception' 
     - 'v3' 
     - 'tensorflow'
+    - 'model' 
 
 ---
 
