@@ -1,17 +1,17 @@
 ---
-
-  topic: 'sample' 
-  languages: 
-  - 'python' 
-  technologies: 
-  - 'Azure Machine Leaning' 
-  extensions: 
-    gallery_topics: 
-    - 'inception' 
-    - 'v3' 
-    - 'tensorflow'
-    - 'model' 
-
+page_type: sample
+languages: 
+- 'python' 
+products:
+- azure
+- azure-machine-learning-service
+description: "Code which demonstrates how to deploy and use an Inception model in Azure Machine Learning Service."
+extensions: 
+  gallery_topics: 
+  - 'inception' 
+  - 'v3'
+  - 'tensorflow'
+  - 'model'
 ---
 
 # InceptionV3 Model in Azure AI Gallery
