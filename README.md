@@ -26,12 +26,12 @@ This repository contains code which demonstrates how to deploy and use an Incept
 2. Run the [configuration notebook](src/configuration.ipynb) to create your workspace. 
 3. Run the [deployment notebook](src/deploy-inception-model.ipynb) to deploy inception v3 model to a web service and try out for inference.
 
-# Resources
+## Resources
 
-## About Azure ML
+### About Azure ML
 
 Get the full documentation for Azure Machine Learning service at https://docs.microsoft.com/azure/machine-learning/service/
 
-## More Examples
+### More Examples
 
  * [Azure/MachineLearningNotebooks GitHub site](https://github.com/Azure/MachineLearningNotebooks)
